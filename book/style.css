@@ -404,7 +404,7 @@ header {
     .main1-box2 {
         display: flex;
         align-items: center;
-        gap:38px;
+        gap:17px;
 
 
 
@@ -482,6 +482,85 @@ header {
     }
 
 
+}
+
+
+.main2 {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-items: center;
+    padding: 100px 0;
+    width: 85vw;
+    margin: auto;
+
+    .m2-img {
+        img {
+            width: 500px;
+        }
+    }
+
+    .main2-all {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+
+       .m2-text {
+
+        h3 {
+            color: rgba(27, 55, 100, 1);
+            font-size: 40px;
+        }
+
+        p {
+            color: rgba(150, 154, 160, 1);
+            font-size: 18px;
+            width: 510px;
+            margin-top: 30px;
+        }
+       }
+
+       .m2-number {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        margin-top: 40px;
+
+        .m2-nmb1 {
+            display: flex;
+            gap: 25px;
+
+            h2 {
+                color: rgba(27, 55, 100, 1);
+                font-size: 45px;
+            }
+
+            p {
+                color: rgba(150, 154, 160, 1);
+            }
+
+            .m2-line {
+               
+                background-color: rgba(255, 202, 66, 1);
+                width: 1px;
+                padding: 1px 2px ;
+            }
+        }
+
+        .m2-nmb0 {
+
+            h2 {
+                color: rgba(27, 55, 100, 1);
+                font-size: 45px;
+            }
+
+            p {
+                color: rgba(150, 154, 160, 1);
+            }
+           
+        }
+       }
+    }
 }
 
 
@@ -703,6 +782,7 @@ header {
     .nav-logo img {
         width: 90px;
     }
+
 } 
 
 @media screen and (min-width:0px) and (max-width:600px) {
@@ -740,6 +820,80 @@ header {
         }
     }
 
+    .main1 {
+
+        .main1-header {
+            h2{
+                margin: auto;
+                padding-left: 8px;
+                width: 80%;
+                font-size: 30px;
+            }
+        }
+
+
+        .main1-boxs {
+            display: grid;
+            grid-template-columns: repeat(1,1fr);
+            gap: 35px;
+
+            .main1-box1 {
+                display: grid;
+                grid-template-columns: repeat(1,1fr);
+                justify-items: center;
+            }
+
+            .main1-box2 {
+                display: grid;
+                grid-template-columns: repeat(1,1fr);
+                justify-items: center;
+            }
+        }
+    }
+
+    .main2 {
+
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        padding-top: 30px;
+
+        .m2-img {
+            img {
+                width: 310px;
+            }
+        }
+
+        .main2-all {
+            .m2-text {
+                h3 {
+                    font-size: 30px;
+                }
+
+                p {
+                    width: 80vw;
+                }
+            }
+
+            .m2-number {
+                .m2-nmb1 {
+                    h2 {
+                       font-size: 30px;
+                    }
+                    p {
+                        font-size: 13px;
+                    }
+                }
+
+                .m2-nmb0 {
+                    h2 {
+                       font-size: 30px;
+                    }
+                }
+
+            }
+        }
+    }
+
 }
 @media screen and (min-width:601px) and (max-width:768px) {
     .head-1-2 {
@@ -764,6 +918,27 @@ header {
         }
     }
 
+    .main1 {
+        .main1-boxs {
+            display: grid;
+            grid-template-columns: repeat(1,1fr);
+        }
+    }
+
+    .main2 {
+
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        padding-top: 30px;
+
+        .m2-img {
+
+            img {
+                width: 350px;
+            }
+           }
+    }
+
 }
 @media screen and (min-width:769px) and (max-width:1024px) {
 
@@ -786,6 +961,21 @@ header {
         }
     }
 
+
+    .main1 {
+        .main1-boxs {
+            display: grid;
+            grid-template-columns: repeat(1,1fr);
+        }
+    }
+
+    .main2 {
+
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        padding-top: 30px;
+}
+
 }
 @media screen and (min-width:1025px) and (max-width:1400px) {
 
@@ -800,6 +990,14 @@ header {
                     
                 }
             }
+        }
+    }
+
+
+    .main1 {
+        .main1-boxs {
+            display: grid;
+            grid-template-columns: repeat(1,1fr);
         }
     }
 }
